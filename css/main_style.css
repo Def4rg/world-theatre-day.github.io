@@ -1,0 +1,39 @@
+
+
+
+
+@font-face {
+    font-family: 'lack_lineregular';
+    src: url('../fonts/lack-line-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'lackregular';
+    src: url('../fonts/lack-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: lackregular;
+    background-color: #333333;
+    color: white;
+}
+
+
+.panel_font {
+    font-family: lackregular;
+    color: #AAAAAA;
+}
+
+.main_title {
+    font-family: lack_lineregular;
+    color: #AAAAAA;
+    font-size: 34px;
+}
+
