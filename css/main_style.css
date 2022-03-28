@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'lack_lineregular';
-    src: url('/fonts/lack-line-regular.woff') format('woff');
+    src: url('../fonts/lack-line-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: 'lackregular';
-    src: url('/fonts/lack-regular.woff') format('woff');
+    src: url('../fonts/lack-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -23,6 +23,9 @@ body {
     font-family: lackregular;
     background-color: #333333;
     color: white;
+    margin: 0;
+    text-align: center;
+    scroll-behavior: smooth;
 }
 
 
@@ -37,3 +40,207 @@ body {
     font-size: 34px;
 }
 
+.block-1 {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.block-2 {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.background-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*resize картинки*/
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+.block-1 span {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.title{
+    bottom: 50%;
+    font-family: lack_lineregular;
+    font-size: 650%;
+}
+
+.date {
+    bottom: 45%;
+    font-family: lackregular;
+    font-size: 250%;
+    
+}
+
+.main_img1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.main_img2 {
+    object-fit: cover;
+    width: 100%;
+}
+
+tr{
+    width: 100%;
+}
+
+.block-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    vertical-align: center;
+}
+
+.flex-container a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.flex-container p {
+    color: #AAAAAA;
+}
+
+#container-1{
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.block {
+    height: auto;
+    width: 50%;
+}
+
+#bgimg1{
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(../image/theatre_work.webp);
+    background-size: cover;
+}
+
+#bgimg2 {
+    height: 700px;
+    background-image: url(../image/theatre_scene.jpg);
+    background-size: cover;
+}
+
+#text2{
+    height: 700px;
+    vertical-align: middle;
+}
+
+.gal-img{
+    width: 700px;
+    height: 500px;
+    background-size: cover;
+}
+
+.gal_menu{
+    width: 33.33%;
+    height: 100vh;
+    backdrop-filter: none;
+}
+.gal_menu p {
+    font-family: lack_lineregular;
+    font-size: 80px;
+    z-index: 2;
+    visibility: hidden;
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+}
+
+.blur{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.gallery_block{
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.gallery_block:hover{
+    transition: 1s;
+    transform: scale(1.4);
+}
+
+@media screen and (max-width: 1440px)  {
+    .flex-container {
+        flex-direction: column;
+    }
+    #container-2{
+        flex-direction: column-reverse;
+    }
+    .block{
+        width: 100%;
+    }
+    .gal_menu{
+        width: 100%;
+        height: 33.33vh;
+    }
+    .gal_menu p {
+        margin-top: 16vh;
+        margin-bottom: 16vh;
+    }
+    .gallery{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .gallery_block {
+        width: 100%;
+        min-height: 500px;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.blur:hover {
+    backdrop-filter: blur(10px);
+    transition: 1s;
+}
+
+.gal_menu:hover p {
+    visibility: visible;
+    transition: 1s;
+}

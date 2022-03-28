@@ -6,32 +6,32 @@
      <title>Всемирный день театра</title>
      <link rel="stylesheet" href="css/menu_style.css">
      <link rel="stylesheet" href="css/main_style.css">
+     <script>
+         function ch(){document.getElementById("check").checked = false;}
+     </script>
  </head>
  <body>
      
-     <input type="checkbox" id="check" hidden >
+     <input style="z-index: 1000" type="checkbox" id="check" hidden>
      
      <div id="static_panel">
-        <label for="check"><img id="menu_icon" src="icons/menu.png" alt="" width="50"></label>
+        <label for="check"><div id="menu_icon"><img id="icon" src="icons/menu.png" alt="" width="50"></div></label>
      </div>
-     
-     <div class="panel_font" id="open_panel">
-       <img id="icon_avatar" src="/icons/avatar.png" alt="">
-       <p class="main_title" style="margin-top: 220px; text-align: center; font-weight: 900">Всемирный день театра</p>
-        <div class="menu_list">
-            <ul>
-                 <li><a class="menu_btn" href="story.html" target="main_information">О событии</a></li>
-                 <br>
-                 <li><a class="menu_btn" href="events.html" target="main_information">Дополнительно</a></li>
-                 <br>
-                 <li><a class="menu_btn" href="gallery.html" target="main_information">Галерея</a></li>
-            </ul>
+     <div id="open_panel">
+        <div class="left_open_panel">
+            <a onclick="ch()" href="new_story.html" target="main_information" ><div class="menu_btn">О событии</div></a>
+            <a onclick="ch()" href="events.html" target="main_information"><div class="menu_btn">Дополнительно</div></a>
+            <a onclick="ch()" href="gallery.html" target="main_information"><div class="menu_btn">Галерея</div></a>
+        </div>
+        <div class="right_open_panel">
+            <img id="icon_avatar" src="icons/avatar.png" alt="">
+            <p class="title">Всемирный день театра</p>
         </div>
      </div>
-     
-     <div id="main">
-         <iframe id="main_information" name="main_information" src="story.html" frameborder="0"></iframe>
-     </div>
+        
+    <div id="main">
+         <iframe id="main_information" name="main_information" src="new_story.html" frameborder="0"></iframe>
+    </div>
      
  </body>
  </html>
