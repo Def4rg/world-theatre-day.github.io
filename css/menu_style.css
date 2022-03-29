@@ -10,7 +10,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100vh;
-    min-height: -webkit-fill-available;
+    min-height: -wevkit-fill-avaible;
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -27,6 +27,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #open_panel {
@@ -34,7 +35,8 @@ body {
     flex-direction: row;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    min-height: -wevkit-fill-avaible;
     background-color: #202020;
     left: -100%;
     z-index: 90;
@@ -195,6 +197,7 @@ body {
         width: 200px;
         height: 200px;
         border-radius: 100px;
+        margin-bottom: 150px;
     }
     #icon {
         width: 100px;
